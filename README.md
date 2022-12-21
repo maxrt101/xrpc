@@ -19,6 +19,6 @@ xrpc.server.join()
 ```python
 import xrpc
 
-response = xrpc.call('test', 'localhost', 8080)
+response = xrpc.call('test', {'parameter': 123}, 'localhost', 8080)
 print(response.code, response.data)
 ```
