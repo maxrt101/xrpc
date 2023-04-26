@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 from pathlib import Path
 
 repo_dir = Path(__file__).parent
@@ -19,7 +19,7 @@ setup(
       long_description=long_description,
       long_description_content_type='text/markdown',
       python_requires='>=3.10',
-      packages=['xrpc'],
+      packages=find_packages(),
       install_requires=requirements,
       project_urls={
             'Source': 'https://github.com/maxrt101/xrpc',

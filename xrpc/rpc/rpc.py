@@ -1,8 +1,8 @@
-
 from typing import Callable, Tuple
-from ..util import addr_to_str
-from ..log import logger
+from xrpc.util import addr_to_str
+from xrpc.log import logger
 import requests
+
 
 class RPC:
     def __init__(self, name: str, handler: Callable, remote: Tuple = ('', 0)):
